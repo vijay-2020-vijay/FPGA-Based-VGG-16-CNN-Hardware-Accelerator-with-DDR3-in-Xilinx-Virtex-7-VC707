@@ -160,6 +160,16 @@ The central design principle of this accelerator is **not** maximizing raw paral
 | [`README.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/README.pdf) | Platform requirements and licensing notes — Vivado 2017 (licensed FPGA platform required) |
 | `README.md` | Project documentation |
 
+
+## Post-Synthesis and Implementation Results:
+
+
+
+
+
+
+
+
 > ⚠️ **Platform Note:** This project was built and verified using a **licensed Xilinx Vivado 2017 installation**. A licensed FPGA platform/toolchain matching this version is required to reproduce synthesis and implementation results — see `README.pdf` for full platform and licensing requirements.
 
 ##  Designed for Reuse Beyond VGG-16
