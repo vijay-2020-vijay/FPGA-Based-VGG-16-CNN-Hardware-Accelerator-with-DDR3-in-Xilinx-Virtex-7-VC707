@@ -174,8 +174,7 @@ The central design principle of this accelerator is **not** maximizing raw paral
 > *Behavioral Verification & Timing Validation*
 ---
 
-![Simulation 112 122 64 F 128](VGG16_EXP_sim_Images1/112_122_64_F%3D128_time_17.45msec_15.png)
-![Simulation 224 224 4 F 64](VGG16_EXP_sim_Images1/224_224_4_F_64_time_4.07msec_16.png)
+
 ![Screenshot 3630](VGG16_EXP_sim_Images1/Screenshot%20%283630%29.png)
 ![Screenshot 3637](VGG16_EXP_sim_Images1/Screenshot%20%283637%29.png)
 ![Screenshot 3638](VGG16_EXP_sim_Images1/Screenshot%20%283638%29.png)
@@ -189,10 +188,6 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Screenshot 3654](VGG16_EXP_sim_Images1/Screenshot%20%283654%29.png)
 ![Screenshot 3655](VGG16_EXP_sim_Images1/Screenshot%20%283655%29.png)
 ![Screenshot 3656](VGG16_EXP_sim_Images1/Screenshot%20%283656%29.png)
-![Convo 1 1 Layer](VGG16_EXP_sim_Images1/convo1%2C1layer%28224_224_3_for_64filter%29time%3D7%2C4msec_per%20image-Picsa...png)
-![Convo 1 2 Layer](VGG16_EXP_sim_Images1/convo1%2C2_%28224_224_64__for%2064%20filter%29_time%3D15fil%3D38msec%20for%2064%20filter...png)
-![Convo 2 2 Layer](VGG16_EXP_sim_Images1/convo2%2C2_%28112_112_128%20for%20128filter%29_time3F%3D3.85msec%2C128f%3D164ms...png)
-![Convo 3 3 Layer](VGG16_EXP_sim_Images1/convo3.3_%2856_56_256_for_256filter%29_time_59f%3D39.29mse_256F%3D170....png)
 
 
 
