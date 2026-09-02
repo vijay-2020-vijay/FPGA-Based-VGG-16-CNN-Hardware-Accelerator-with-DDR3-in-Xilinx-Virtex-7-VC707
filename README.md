@@ -132,7 +132,10 @@ The central design principle of this accelerator is **not** maximizing raw paral
 | [`MTP_Paper_VGG16_DDR3_IEEE_format.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/MTP_Paper_VGG16_DDR3_IEEE_formet.pdf) | Full project paper in IEEE format |
 | [`VGG16_DDR3.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/VGG16_DDR3.pdf) | Full A-to-Z documentation report — complete design, implementation, and result details |
 | [`VGG16_DDR3_PPT.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/VGG16_DDR3_PPT.pdf) | Full project presentation — architecture, results, and literature comparison |
-| [`Experimental_Screenshot_images/`]() | Architecture diagrams, RTL schematics, and implementation reports |
+| [`VGG16_Archi_plan_Images1`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/tree/main/VGG16_Archi_plan_Images1) | Architecture planning diagrams and hardware module specifications (Part 1) |
+| [`VGG16_Archi_plan_Images2`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/tree/main/VGG16_Archi_plan_Images2) | High-level system blocks, memory mapping, and dataflow planning diagrams (Part 2) |
+| [`VGG16_EXP_real_archi_Images2`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/tree/main/VGG16_EXP_real_archi_Images2) | Hardware deployment block diagrams, Vivado IP setups, and VC707 board setups |
+| [`VGG16_EXP_sim_Images1`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/tree/main/VGG16_EXP_sim_Images1) | Behavioral simulation waveforms, testbench verification, and output feature maps |
 
 
 | [`README.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/README.pdf) | Platform requirements and licensing notes — Vivado 2017 (licensed FPGA platform required) |
