@@ -138,16 +138,13 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Accumulation In Memory](VGG16_Archi_plan_Images2/Accumuletion_inmemorey.png)
 
 
+![Convolution Architecture](VGG16_Archi_plan_Images1/convolution_Architecture.png)
+![Internal Buffer Streaming](VGG16_Archi_plan_Images1/internal_buffer_streming.png)
+![Internal MAC](VGG16_Archi_plan_Images1/internal_mac.png)
+![Single F Multi Ch Convolution](VGG16_Archi_plan_Images1/Single_F_multi_ch_coinvolution.png)
+![Standard Convolution](VGG16_Archi_plan_Images1/standard_convolution.png)
 
-![Standard Convolution Operation Concept](Experimental_Screenshot_images/Screenshot%20%283587%29.png)
-![Internal Structure of Single MAC Unit](Experimental_Screenshot_images/mac_unit_internal_structure.png)
-![Inline Buffer Streaming Architecture](Experimental_Screenshot_images/inline_buffer_streaming.png)
-![BRAM2 Accumulation Process](Experimental_Screenshot_images/bram_accumulation_process.png)
-![Max-Pooling Dataflow Architecture](Experimental_Screenshot_images/maxpool_dataflow.png)
-![Full CNN Accelerator RTL Block (Vivado Schematic)](Experimental_Screenshot_images/cnn_accelerator_rtl_schematic.png)
-![Full VGG-16 Dataflow with 4 CNN Engines](Experimental_Screenshot_images/vgg16_4engine_dataflow.png)
-![Post-Implementation Utilization, Timing & Power Report](Experimental_Screenshot_images/post_implementation_report.png)
-![Edge Detection Output Validation (224×224×3 RGB)](Experimental_Screenshot_images/edge_detection_validation.png)
+
 
 ## 📂 Repository Structure
 
