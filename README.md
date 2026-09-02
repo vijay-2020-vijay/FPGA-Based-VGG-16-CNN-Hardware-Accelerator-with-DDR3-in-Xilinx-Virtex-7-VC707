@@ -104,19 +104,12 @@ The central design principle of this accelerator is **not** maximizing raw paral
 | AXI Data Width | 512-bit |
 
 
-
-
-
-
-
 ##  Verification Approach
 
 - Full **post-synthesis simulation** across every convolution block (Conv1.1 through Conv5.3), with measured per-layer latency matching hand-calculated theoretical values (e.g., Conv1.1: 4.07 ms measured vs. 4.07 ms calculated).
 - **Layer-wise output correctness validated** via Python (OpenCV) — pixel extraction and feature map reconstruction confirmed against expected values, including a full edge-detection test on a real 224×224×3 RGB image.
 - **Post-implementation timing closure**: 0 failing endpoints across 71,424 timing paths at 200 MHz (WNS: 0.063 ns).
 - DDR3 read/write burst behavior verified at the waveform level to confirm correct AXI protocol compliance under back-to-back access patterns.
-
----
 
 ## 📊 Post-Implementation Report
 
