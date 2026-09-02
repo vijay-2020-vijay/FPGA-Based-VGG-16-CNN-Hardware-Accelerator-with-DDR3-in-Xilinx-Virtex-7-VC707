@@ -1,6 +1,6 @@
 # FPGA-Based Hardware Acceleration of VGG-16 Deep Convolutional Neural Network Using DDR3 for Real-Time AI Inference
 
-A complete, silicon-ready hardware accelerator for the full VGG-16 deep neural network, designed from scratch in Verilog HDL and implemented on a Xilinx Virtex-7 VC707 FPGA. This project delivers a custom 4-engine parallel CNN accelerator with a DDR3-backed memory hierarchy, achieving **107.2 GOP/s** throughput at **4.62 W** — matching ASIC-class efficiency while retaining FPGA flexibility.
+A complete, silicon-ready hardware accelerator for the full VGG-16 deep neural network, designed from scratch in Verilog HDL and implemented on a Xilinx Virtex-7 VC707 FPGA. This project delivers a custom 4-engine parallel CNN accelerator with a DDR3-backed memory hierarchy, achieving **83.8 GOP/s** throughput at **4.62 W** — matching ASIC-class efficiency while retaining FPGA flexibility.
 
 **Presented by:** Rabisankar Maity
 **Under the supervision of:** Prof. Roy Paily Palathinkal
@@ -49,9 +49,9 @@ A CPU takes *seconds* per inference. Meanwhile, a typical Virtex-7 FPGA has only
 | FID | 2020 | ASIC | 65 nm CMOS | — | — | — | — | 200 | 453.30 | 67.70 | 0.260 | 16 |
 | ZASCAD | 2020 | ASIC | 65 nm CMOS | — | — | — | — | 200 | 421.80 | 72.50 | 0.301 | 16 |
 | CARLA | 2020 | ASIC | 65 nm CMOS | — | — | — | — | 200 | 92.70 | 75.40 | 0.247 | 16 |
-| **This Work** | **2026** | **FPGA** | **Virtex-7 VC707** | **300** | **388** | **98,735** | **77,375** | **200** | **369.97** | **107.2** | **4.62** | **16** |
+| **This Work** | **2026** | **FPGA** | **Virtex-7 VC707** | **300** | **388** | **98,735** | **77,375** | **200** | **369.97** | **83.8** | **4.62** | **16** |
 
-**The headline result:** This work sustains **107.2 GOP/s at just 4.62 W** using only **300 DSPs** — a fraction of the DSP count used by comparable high-throughput FPGA designs (up to **9.6× fewer DSPs** than Yuan et al.'s VC709 implementation), while consuming **up to 7.5× less power** than other high-throughput FPGA accelerators in the same class. Against ASIC implementations, this design achieves **comparable or better throughput at similar power efficiency**, without sacrificing the reconfigurability that FPGAs uniquely offer.
+**The headline result:** This work sustains **83.8 GOP/s at just 4.62 W** using only **300 DSPs** — a fraction of the DSP count used by comparable high-throughput FPGA designs (up to **9.6× fewer DSPs** than Yuan et al.'s VC709 implementation), while consuming **up to 7.5× less power** than other high-throughput FPGA accelerators in the same class. Against ASIC implementations, this design achieves **comparable or better throughput at similar power efficiency**, without sacrificing the reconfigurability that FPGAs uniquely offer.
 
 
 
