@@ -20,9 +20,10 @@ All RTL source files, simulation results, the full project presentation, and ref
 ##  The Problem
 
 VGG-16 is a 16-layer convolutional neural network requiring:
-- **138 million parameters**
-- **~15.5 billion multiply-accumulate (MAC) operations** per image
-- **292.67 MB** of total memory for weights, biases, and feature maps
+- **138 million parameters**(includeing ANN part)
+- **~15.5 billion multiply-accumulate (MAC) operations** per image( without ANN part)
+- **292.67 MB** of total memory for weights, biases, and feature maps(with ANN part)
+- **without ANN part Almost 30MB Space required.
 
 A CPU takes *seconds* per inference. Meanwhile, a typical Virtex-7 FPGA has only **4 MB of on-chip BRAM** — a **73× memory gap** against what VGG-16 actually needs. Existing FPGA/ASIC solutions in literature solve this by either burning excessive power (10–35 W), consuming enormous DSP/LUT resources, or dropping to low-bit precision with severe latency penalties.
 
