@@ -7,7 +7,7 @@ A complete, silicon-ready hardware accelerator for the full VGG-16 deep neural n
 **Department of Electronics and Electrical Engineering, Indian Institute of Technology Guwahati**
 
 ---
-![VGG-16_Application](Experimental_Screenshot_images/VGG16_Application.png)
+![VGG-16_Application](./VGG16_Application.png)
 ##  Full Project Download
 
 All RTL source files, simulation results, the full project presentation, and reference documentation are packaged together.
