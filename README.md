@@ -189,10 +189,8 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Screenshot 3655](VGG16_EXP_sim_Images1/Screenshot%20%283655%29.png)
 ![Screenshot 3656](VGG16_EXP_sim_Images1/Screenshot%20%283656%29.png)
 
-![Simulation 224x224 4 Filter 64](VGG16_EXP_sim_Images1/224_224_4_F_64_time_4.07msec_16.png)
-![Convo 1,1 Layer Time](VGG16_EXP_sim_Images1/convo1%2C1layer%28224_224_3_for_64filter%29time%3D7%2C4msec_per%20image-Picsa...png)
-
-
+![Simulation 224x224 4 Filter 64](VGG16_EXP_sim_Images1/224_224_4_F_64_time%3D4.07msec_16.png)
+![Convo 1,1 Layer Time](VGG16_EXP_sim_Images1/convo1%2C1layer%28224_224_3_for_64filter%29time%3D7%2C4msec_per%20image-Picsart-AiImageEnhancer.png)
 
 
 > ⚠️ **Platform Note:** This project was built and verified using a **licensed Xilinx Vivado 2017 installation**. A licensed FPGA platform/toolchain matching this version is required to reproduce synthesis and implementation results — see `README.pdf` for full platform and licensing requirements.
