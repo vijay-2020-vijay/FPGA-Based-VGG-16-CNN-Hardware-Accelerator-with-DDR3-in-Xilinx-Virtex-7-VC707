@@ -130,8 +130,7 @@ The central design principle of this accelerator is **not** maximizing raw paral
 
 *(Paste your images into the `Experimental_Screenshot_images/` folder using these filenames, or update the paths below to match your actual filenames.)*
 
-![VGG-16 Full Network Architecture](Experimental_Screenshot_images/Screenshot%20(3587).png)
-![Standard Convolution Operation Concept](Experimental_Screenshot_images/convolution_operation_concept.png)
+![Standard Convolution Operation Concept](Experimental_Screenshot_images/Screenshot (3587).png)
 ![Internal Structure of Single MAC Unit](Experimental_Screenshot_images/mac_unit_internal_structure.png)
 ![Inline Buffer Streaming Architecture](Experimental_Screenshot_images/inline_buffer_streaming.png)
 ![BRAM2 Accumulation Process](Experimental_Screenshot_images/bram_accumulation_process.png)
