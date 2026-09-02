@@ -8,16 +8,16 @@ A complete, silicon-ready hardware accelerator for the full VGG-16 deep neural n
 
 ---
 
-## 📦 Full Project Download
+##  Full Project Download
 
 All RTL source files, simulation results, the full project presentation, and reference documentation are packaged together.
 
-**[⬇️ Download Full Project (Google Drive)](https://drive.google.com/file/d/1-XOkdn0KZGbk76jt35BEpLkjuwYOc8G-/view?usp=drive_link)**
+**[📁 Download Full Project (Google Drive)](https://drive.google.com/file/d/1-XOkdn0KZGbk76jt35BEpLkjuwYOc8G-/view?usp=drive_link)**
 **[📁 Experimental Images & Screenshots (Google Drive Folder)](https://drive.google.com/drive/folders/1DM7Ek4enavNAiZPGLPzdEr_0tPWFCERx?usp=sharing)**
 
 
 
-## 🎯 The Problem
+##  The Problem
 
 VGG-16 is a 16-layer convolutional neural network requiring:
 - **138 million parameters**
@@ -30,7 +30,7 @@ A CPU takes *seconds* per inference. Meanwhile, a typical Virtex-7 FPGA has only
 
 ---
 
-## 🏆 Performance Comparison with State-of-the-Art
+##  Performance Comparison with State-of-the-Art
 
 | Work | Year | Type | Platform / Tech. | DSP | BRAM | LUT | FF | Freq. (MHz) | Latency (ms) | Throughput (GOP/s) | Power (W) | Precision (bit) |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -85,7 +85,7 @@ The central design principle of this accelerator is **not** maximizing raw paral
 
 ---
 
-## ✅ Verification Approach
+##  Verification Approach
 
 - Full **post-synthesis simulation** across every convolution block (Conv1.1 through Conv5.3), with measured per-layer latency matching hand-calculated theoretical values (e.g., Conv1.1: 4.07 ms measured vs. 4.07 ms calculated).
 - **Layer-wise output correctness validated** via Python (OpenCV) — pixel extraction and feature map reconstruction confirmed against expected values, including a full edge-detection test on a real 224×224×3 RGB image.
@@ -137,7 +137,7 @@ The central design principle of this accelerator is **not** maximizing raw paral
 
 > ⚠️ **Platform Note:** This project was built and verified using a **licensed Xilinx Vivado 2017 installation**. A licensed FPGA platform/toolchain matching this version is required to reproduce synthesis and implementation results — see `README.pdf` for full platform and licensing requirements.
 
-## 🚀 Designed for Reuse Beyond VGG-16
+##  Designed for Reuse Beyond VGG-16
 
 The core CNN computation engine is **fully parameterized** — not hardcoded to VGG-16 — supporting both standard and depthwise convolution:
 
