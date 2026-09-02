@@ -137,11 +137,9 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Gemini Generated Image](VGG16_Archi_plan_Images2/Gemini_Generated_Image_hely9ohely9ohely.png)
 ![Accumulation In Memory](VGG16_Archi_plan_Images2/Accumuletion_inmemorey.png)
 
-
 ![Convolution Architecture](VGG16_Archi_plan_Images1/convolution_Architecture.png)
 ![Internal Buffer Streaming](VGG16_Archi_plan_Images1/internal_buffer_streming.png)
 ![Internal MAC](VGG16_Archi_plan_Images1/internal_mac.png)
-![Single F Multi Ch Convolution](VGG16_Archi_plan_Images1/Single_F_multi_ch_coinvolution.png)
 ![Standard Convolution](VGG16_Archi_plan_Images1/standard_convolution.png)
 
 
