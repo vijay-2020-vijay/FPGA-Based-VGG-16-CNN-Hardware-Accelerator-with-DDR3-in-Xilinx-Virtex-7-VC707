@@ -170,7 +170,9 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Screenshot 2026-06-10 172334](VGG16_EXP_real_archi_Images2/Screenshot%202026-06-10%20172334.png)
 ![Screenshot 2026-06-10 173111](VGG16_EXP_real_archi_Images2/Screenshot%202026-06-10%20173111.png)
 ![State of the Art Comparison](VGG16_EXP_real_archi_Images2/state%20of%20Arts_comparisim_with_mywork.png)
-
+# 🔬 SIMULATION & WAVEFORM ANALYSIS
+> *Behavioral Verification & Timing Validation*
+---
 
 
 
