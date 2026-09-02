@@ -12,9 +12,10 @@ A complete, silicon-ready hardware accelerator for the full VGG-16 deep neural n
 
 All RTL source files, simulation results, the full project presentation, and reference documentation are packaged together.
 
-**[⬇️ Download Full Project (Google Drive)](PASTE_YOUR_GOOGLE_DRIVE_LINK_HERE)**
+**[⬇️ Download Full Project (Google Drive)](https://drive.google.com/file/d/1-XOkdn0KZGbk76jt35BEpLkjuwYOc8G-/view?usp=drive_link)**
+**[📁 Experimental Images & Screenshots (Google Drive Folder)](https://drive.google.com/drive/folders/1DM7Ek4enavNAiZPGLPzdEr_0tPWFCERx?usp=sharing)**
 
----
+
 
 ## 🎯 The Problem
 
