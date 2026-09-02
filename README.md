@@ -123,19 +123,18 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Post-Implementation Utilization, Timing & Power Report](Experimental_Screenshot_images/post_implementation_report.png)
 ![Edge Detection Output Validation (224×224×3 RGB)](Experimental_Screenshot_images/edge_detection_validation.png)
 
----
-
 ## 📂 Repository Structure
 
 | Folder / File | Description |
 |---|---|
-| `RTL_Source_Files/` | Verilog RTL — CNN engine, BRAM controllers, FSMs, AXI interconnect logic |
-| `Simulation_Results/` | Post-synthesis simulation waveforms and per-layer latency verification |
+| [`MTP_Paper_VGG16_DDR3_IEEE_format.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/MTP_Paper_VGG16_DDR3_IEEE_formet.pdf) | Full project paper in IEEE format |
+| [`VGG16_DDR3.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/VGG16_DDR3.pdf) | Full A-to-Z documentation report — complete design, implementation, and result details |
+| [`VGG16_DDR3_PPT.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/VGG16_DDR3_PPT.pdf) | Full project presentation — architecture, results, and literature comparison |
 | `Experimental_Screenshot_images/` | Architecture diagrams, RTL schematics, and implementation reports |
-| `VGG16_DDR3_PPT_final.pdf` | Full project presentation — architecture, results, and literature comparison |
+| [`README.pdf`](https://github.com/vijay-2020-vijay/FPGA-Based-VGG-16-CNN-Hardware-Accelerator-with-DDR3-in-Xilinx-Virtex-7-VC707/blob/main/README.pdf) | Platform requirements and licensing notes — Vivado 2017 (licensed FPGA platform required) |
 | `README.md` | Project documentation |
 
----
+> ⚠️ **Platform Note:** This project was built and verified using a **licensed Xilinx Vivado 2017 installation**. A licensed FPGA platform/toolchain matching this version is required to reproduce synthesis and implementation results — see `README.pdf` for full platform and licensing requirements.
 
 ## 🚀 Designed for Reuse Beyond VGG-16
 
