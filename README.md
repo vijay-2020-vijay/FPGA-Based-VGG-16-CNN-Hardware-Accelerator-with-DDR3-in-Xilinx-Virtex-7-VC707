@@ -128,6 +128,10 @@ The central design principle of this accelerator is **not** maximizing raw paral
 
 ## 📸 Architecture & Implementation Visuals
 ![Standard Convolution Operation Concept](VGG16_EXP_real_archi_Images2/Screenshot%20%283587%29.png)
+![Screenshot 4497](VGG16_EXP_real_archi_Images22/Screenshot%20%284497%29.png)
+![Screenshot 4498](VGG16_EXP_real_archi_Images22/Screenshot%20%284498%29.png)
+
+
 
 ![Standard Convolution Operation Concept](Experimental_Screenshot_images/Screenshot%20%283587%29.png)
 ![Internal Structure of Single MAC Unit](Experimental_Screenshot_images/mac_unit_internal_structure.png)
