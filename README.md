@@ -131,7 +131,7 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Screenshot 4497](VGG16_EXP_real_archi_Images22/Screenshot%20%284497%29.png)
 ![Screenshot 4498](VGG16_EXP_real_archi_Images22/Screenshot%20%284498%29.png)
 ![4 CNN Parallel](VGG16_Archi_plan_Images2/4_CNN_parallel.png)
-![Dataflow 4 CNN Engine Architecture](VGG16_Archi_plan_Images2/Dataflow_4_CNN_engine_Architechture.png)
+![Dataflow 4 CNN Engine Architecture](VGG16_Archi_plan_Images2/dataflow_4_CNN_engine_Architechture.png)
 
 
 ![Standard Convolution Operation Concept](Experimental_Screenshot_images/Screenshot%20%283587%29.png)
