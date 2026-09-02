@@ -135,7 +135,7 @@ The central design principle of this accelerator is **not** maximizing raw paral
 ![Accumulation In Memory](VGG16_Archi_plan_Images2/Accumulation_inmemorey.png)
 ![Overall Dataflow Single CNN Engine](VGG16_Archi_plan_Images2/overall_dataflow_of_single_CNN_engine.png)
 ![Gemini Generated Image](VGG16_Archi_plan_Images2/Gemini_Generated_Image_hely9ohely9ohely.png)
-![Accumulation In Memory](VGG16_Archi_plan_Images2/Accumulation_inmemorey.png)
+![Accumulation In Memory](VGG16_Archi_plan_Images2/Accumuletion_inmemorey.png)
 
 
 
