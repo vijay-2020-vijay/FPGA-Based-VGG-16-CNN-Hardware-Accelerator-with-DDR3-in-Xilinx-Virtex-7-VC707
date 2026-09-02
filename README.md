@@ -162,7 +162,14 @@ The central design principle of this accelerator is **not** maximizing raw paral
 
 
 ## Post-Synthesis and Implementation Results:
-
+![Block Wise Latency](VGG16_EXP_real_archi_Images2/Block_wise_latency.png)
+![Screenshot 3358](VGG16_EXP_real_archi_Images2/Screenshot%20%283358%29.png)
+![Screenshot 3481](VGG16_EXP_real_archi_Images2/Screenshot%20%283481%29.png)
+![Screenshot 3647](VGG16_EXP_real_archi_Images2/Screenshot%20%283647%29.png)
+![Screenshot 4](VGG16_EXP_real_archi_Images2/Screenshot%20_4.png)
+![Screenshot 2026-06-10 172334](VGG16_EXP_real_archi_Images2/Screenshot%202026-06-10%20172334.png)
+![Screenshot 2026-06-10 173111](VGG16_EXP_real_archi_Images2/Screenshot%202026-06-10%20173111.png)
+![State of the Art Comparison](VGG16_EXP_real_archi_Images2/state%20of%20Arts_comparisim_with_mywork.png)
 
 
 
