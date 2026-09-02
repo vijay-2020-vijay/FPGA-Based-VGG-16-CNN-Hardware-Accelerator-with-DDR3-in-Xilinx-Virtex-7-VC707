@@ -15,7 +15,23 @@ All RTL source files, simulation results, the full project presentation, and ref
 **[📁 Download Full Project (Google Drive)](https://drive.google.com/file/d/1-XOkdn0KZGbk76jt35BEpLkjuwYOc8G-/view?usp=drive_link)**
 **[📁 Experimental Images & Screenshots (Google Drive Folder)](https://drive.google.com/drive/folders/10FEyOVszcu8QYUEyfChgpoxFOgg5Q2zA?usp=sharing)**
 
+## ⚙️ Key Design Parameters
 
+| Parameter | Value | Description |
+|---|---|---|
+| Data precision (w) | 16-bit fixed point | Pixel values, kernel weights, MAC outputs |
+| Kernel size (k_size) | 3 × 3 | Fixed convolution kernel footprint |
+| BRAM word width | 128 bits | 8 pixels per BRAM access |
+| Parallel MAC units | 8 × 4 = 32 | 32 output pixels per clock cycle (4 channels in parallel) |
+| Multipliers per MAC | 9 | Full 3 × 3 kernel coverage per unit |
+| Total MACs/cycle | 72 × 4 = 288 | 8 × 9 × 4 |
+| MAC pipeline depth | 2 cycles | Multiply stage + adder-tree stage |
+| Circular buffer rows | 3 | One kernel height; modulo-3 rotation |
+| 4-channel group size | 4 | BRAM1 image buffer capacity per refresh |
+| DDR3 width | 64-bit physical | 8 DDR3 data byte lanes |
+| AXI data width | 512-bit | Matches 4× BRAM word width |
+| System clock | 200 MHz | After Xilinx clk_wiz_0 PLL |
+| Supported image sizes | 224, 112, 56, 28, 14, 7 | All VGG-16 spatial feature map sizes |
 
 ##  The Problem
 
@@ -29,32 +45,20 @@ A CPU takes *seconds* per inference. Meanwhile, a typical Virtex-7 FPGA has only
 
 **Goal of this project:** Match ASIC-level performance and power efficiency, solve the memory wall, and retain full FPGA reconfigurability — all three simultaneously, without compromise.
 
----
-
-##  Performance Comparison with State-of-the-Art
-
-| Work | Year | Type | Platform / Tech. | DSP | BRAM | LUT | FF | Freq. (MHz) | Latency (ms) | Throughput (GOP/s) | Power (W) | Precision (bit) |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| **FPGA Implementations** | | | | | | | | | | | | |
-| Mei et al. | 2017 | FPGA | Xilinx XC7VX690T | 1,728 | 196.5 | 210,992 | 219,538 | 200 | 151.91 | 202.42 | 10.81 | 16-float |
-| Kala et al. | 2010 | FPGA | Zynq XC7Z045 | 780 | 486 | 182,000 | 127,700 | 150 | 224.60 | 136.97 | 9.63 | 16 |
-| Li et al. | 2020 | PPGA | Stratix V GXA7 | 256 | 1,377 | — | — | 200 | 46.30 | 669.10 | — | 16 |
-| Li et al. | 2020 | PPGA | Virtex-7 VX900t | 2,160 | 1,220 | — | — | 150 | 106.60 | 290.00 | 35.00 | 16 |
-| Li et al. | 2020 | PPGA | Intel Arria 10 | 1,518 | 2,232 | — | — | 200 | 43.20 | 715.90 | — | 16 |
-| Yuan et al. | 2021 | PPGA | Zynq ZC706 | 780 | 486 | 182,616 | 127,653 | — | 112.4† | — | — | — |
-| Yuan et al. | 2021 | PPGA | Virtex-7 VC707 | 2,296 | — | 215,556 | 66,792 | — | 29.6† | — | — | 16 |
-| Yuan et al. | 2021 | PPGA | Virtex-7 VC709 | 2,877 | 882.5 | 337,152 | 606,307 | — | 22.0† | — | — | — |
-| Zhang & Zhang | 2024 | FPGA | Zynq-7020 | 138 | — | — | — | 130 | 182.30 | 41.20 | — | 8 |
-| **ASIC Implementations** | | | | | | | | | | | | |
-| Eyeriss | 2017 | ASIC | 65 nm CMOS | — | — | — | — | 200 | 4309.50 | 21.40 | 0.236 | 16 |
-| FID | 2020 | ASIC | 65 nm CMOS | — | — | — | — | 200 | 453.30 | 67.70 | 0.260 | 16 |
-| ZASCAD | 2020 | ASIC | 65 nm CMOS | — | — | — | — | 200 | 421.80 | 72.50 | 0.301 | 16 |
-| CARLA | 2020 | ASIC | 65 nm CMOS | — | — | — | — | 200 | 92.70 | 75.40 | 0.247 | 16 |
-| **This Work** | **2026** | **FPGA** | **Virtex-7 VC707** | **300** | **388** | **98,735** | **77,375** | **200** | **369.97** | **83.8** | **4.62** | **16** |
-
 **The headline result:** This work sustains **83.8 GOP/s at just 4.62 W** using only **300 DSPs** — a fraction of the DSP count used by comparable high-throughput FPGA designs (up to **9.6× fewer DSPs** than Yuan et al.'s VC709 implementation), while consuming **up to 7.5× less power** than other high-throughput FPGA accelerators in the same class. Against ASIC implementations, this design achieves **comparable or better throughput at similar power efficiency**, without sacrificing the reconfigurability that FPGAs uniquely offer.
 
+## 🏗️ Top-Level Modules Summary of the CNN Accelerator System
 
+| Module Name | Primary Function | Interface |
+|---|---|---|
+| CNN_accelerator_final | FSM compute engine; 8×MAC×2 parallel convolution + max pooling | Direct wire / BRAM |
+| Block_controller_200 | Master orchestrator; layer sequencing, address management; DDR3↔BRAM data transfers | Direct wire / AXI4-Lite |
+| mig_7series_0 | Xilinx MIG DDR3 controller; off-chip 512-bit burst R/W | AXI4 |
+| axi_interconnect | AXI interconnect fabric; interface between master and slave ports | AXI4 |
+| axi_bram_ctrl_0 | AXI-to-BRAM bridge for internal image/kernel BRAM (BRAM2) | AXI4-Lite |
+| BRAM_address_adjuster | Translates logical BRAM addresses to physical port-A addresses during DDR3→BRAM1 base loads | Direct wire |
+| ddr3_interface | Custom AXI master driver; burst read/write transactions to MIG; exposes simple handshake signals to Block Controller | AXI4 master |
+| clk_wiz_0 | PLL-based clock generation; 200 MHz system clock | Clock |
 
 ---
 
