@@ -85,6 +85,25 @@ The central design principle of this accelerator is **not** maximizing raw paral
 - The core CNN engine is designed to accept **any row size**, with the constraint that **column size must be divisible by 8** — enabling the engine to handle every VGG-16 feature map size (224→112→56→28→14→7) through a single reusable, parameterized RTL block rather than per-layer custom hardware.
 
 ---
+## 🛠️ Implementation Environment Summary
+
+| Parameter | Value |
+|---|---|
+| FPGA Device | Xilinx Virtex-7 VC707 (xc7vx485tffg1761-2) |
+| Design Suite | Xilinx Vivado 2016.4 |
+| Simulation Tool | Vivado Simulator (XSim) |
+| HDL Language | Verilog HDL |
+| Target Clock | 200 MHz |
+| Data Precision | 16-bit fixed point |
+| Off-chip Memory | DDR3 SDRAM (64-bit bus, 2 GB) |
+| Memory Controller | Xilinx MIG 7-Series |
+| AXI Data Width | 512-bit |
+
+
+
+
+
+
 
 ##  Verification Approach
 
